@@ -96,26 +96,6 @@ Use Power BI to answer:
 | `fact_medal`   | Foreign keys to athletes, team, event; medal type |
 | `fact_entries` | Gender-based event entry counts                   |
 
-## 📌 Folder Structure (GitHub)
-
-📁 olympics-data-azure-pipeline
-├── 📂 data
-│   ├── Athletes.csv
-│   ├── Coaches.csv
-│   ├── EntriesGender.csv
-│   ├── Medals.csv
-│   └── Teams.csv
-├── 📂 notebooks
-│   └── databricks_etl_notebook.py
-├── 📂 sql
-│   ├── synapse_dim_fact_creation.sql
-│   └── sample_queries.sql
-├── 📂 powerbi
-│   └── dashboard_screenshots/
-├── 📂 images
-│   └── architecture.jpg
-├── README.md
-└── requirements.txt (if Python env used)
 
 
 
