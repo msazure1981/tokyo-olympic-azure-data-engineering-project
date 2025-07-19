@@ -96,6 +96,8 @@ Use Power BI to answer:
 | `fact_medal`   | Foreign keys to athletes, team, event; medal type |
 | `fact_entries` | Gender-based event entry counts                   |
 
+## Power BI Reports
+![Data Model](Power Bi reports.png)
 
 
 
