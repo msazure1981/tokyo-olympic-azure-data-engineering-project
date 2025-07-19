@@ -59,7 +59,7 @@ Null handling for birth dates, medals, or team fields
 
 Standardized country and discipline names
 
-Join logic between Medals, Athletes, Teams
+Join logic between Medals, Athletes, and Teams
 
 Gender-based aggregation using EntriesGender.csv
 
@@ -96,9 +96,5 @@ Use Power BI to answer:
 | `fact_medal`   | Foreign keys to athletes, team, event; medal type |
 | `fact_entries` | Gender-based event entry counts                   |
 
-## Power BI Reports
-![Performance Insights](Power Bi reports.png)
-
-
-
-                            
+## Power BI Reports:
+ ![Insights](Power Bi reports.png)                          
