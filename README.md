@@ -1,13 +1,13 @@
-#Olympics Data Analytics Platform using Azure (ADF, Databricks, Synapse, Power BI)
+# Olympics Data Analytics Platform using Azure (ADF, Databricks, Synapse, Power BI)
 
-##Project Overview:
+## Project Overview:
 
 This project demonstrates a modern data engineering and analytics pipeline using Microsoft Azure. It includes data ingestion, transformation, warehousing, and visualization using Azure-native tools. The dataset is based on Olympic historical data (Athletes, Coaches, Medals, etc.).
 
-🔄 Project Workflow Diagram:
+## 🔄 Project Workflow Diagram:
 ![Project Workflow Diagram:](Architecture.JPG)
 
-🔧 Tools & Technologies Used:
+## 🔧Tools & Technologies Used:
 Azure Data Factory (ADF) – Data ingestion
 
 Azure Data Lake Storage Gen2 – RAW & Curated zone
@@ -18,7 +18,7 @@ Azure Synapse Analytics / Azure SQL Server – Data warehouse and analytics laye
 
 Power BI – Business insights and dashboards
 
-📊 Dataset Overview:
+## 📊 Dataset Overview:
 File Name	Description
 Athletes.csv: Athlete name, discipline, country, birth details
 Coaches.csv: Coach name, discipline, and nationality
@@ -26,7 +26,7 @@ EntriesGender.csv	Gender-wise event entries per discipline, team
 Medals.csv	Medal winners by discipline, event, team, athlete
 Teams.csv	Team metadata (team name, country, etc.)
 
-🔁 Workflow Stages:
+## 🔁 Workflow Stages:
 Ingestion (ADF):
 
 Read .csv files from on-prem/cloud and load into Data Lake Gen2 (RAW zone)
@@ -51,7 +51,7 @@ Connect to Synapse or SQL views
 
 Develop interactive dashboards and insights
 
-🧹 Data Cleaning & Transformation
+## 🧹 Data Cleaning & Transformation
 Performed in Azure Databricks (PySpark):
 
 Null handling for birth dates, medals, or team fields
@@ -64,7 +64,7 @@ Gender-based aggregation using EntriesGender.csv
 
 Created calculated columns: age, medal counts, team rankings
 
-🧠 Business Insights
+## 🧠 Business Insights
 Use Power BI to answer:
 
 🥇 Which countries have the highest medal counts?
@@ -80,19 +80,19 @@ Use Power BI to answer:
 🧱 Olympics Analytics Data Model
    ![Data Model](DML_Diagram.png)
 
-🗃️ Dimension Tables:
+## 🗃️ Dimension Tables:
 Table Name	Description
 dim_athlete	Name, birthdate, discipline, country
 dim_team	Team name, NOC (country), region
 dim_coach	Coach name, discipline, nationality
 dim_event	Event name, discipline, gender
 
-📈 Fact Table:
+## 📈 Fact Table:
 Table Name	Description
 fact_medal	Foreign keys to athletes, team, event; medal type
 fact_entries	Gender-based event entry counts
 
-
+## 📌 Folder Structure (GitHub)
 📁 olympics-data-azure-pipeline
 ├── 📂 data
 │   ├── Athletes.csv
