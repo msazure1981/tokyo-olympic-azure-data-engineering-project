@@ -1,6 +1,11 @@
 #Olympics Data Analytics Platform using Azure (ADF, Databricks, Synapse, Power BI)
 
+##Project Overview
 This project demonstrates a modern data engineering and analytics pipeline using Microsoft Azure. It includes data ingestion, transformation, warehousing, and visualization using Azure-native tools. The dataset is based on Olympic historical data (Athletes, Coaches, Medals, etc.).
+
+🔄 Project Workflow Diagram:
+(Use the attached architecture image in your GitHub README.md and describe each stage briefly)
+![Project Workflow Diagram:](Architecture.jpg)
 
 🔧 Tools & Technologies Used:
 Azure Data Factory (ADF) – Data ingestion
@@ -20,10 +25,6 @@ Coaches.csv: Coach name, discipline, and nationality
 EntriesGender.csv	Gender-wise event entries per discipline, team
 Medals.csv	Medal winners by discipline, event, team, athlete
 Teams.csv	Team metadata (team name, country, etc.)
-
-🔄 Project Workflow Diagram:
-(Use the attached architecture image in your GitHub README.md and describe each stage briefly)
-![Project Workflow Diagram:](Architecture.jpg)
 
 🔁 Workflow Stages:
 Ingestion (ADF):
@@ -77,7 +78,7 @@ Use Power BI to answer:
 🌍 Region-based performance comparison?
 
 🧱 Olympics Analytics Data Model
-![Data Model](DML_Diagram.png)
+   ![Data Model](DML_Diagram.png)
 
 🗃️ Dimension Tables:
 Table Name	Description
