@@ -97,7 +97,7 @@ Use Power BI to answer:
 | `fact_entries` | Gender-based event entry counts                   |
 
 ## Power BI Reports
-![Data Model](Power Bi reports.png)
+![Performance Insights](Power Bi reports.png)
 
 
 
