@@ -19,12 +19,13 @@ Azure Synapse Analytics / Azure SQL Server – Data warehouse and analytics laye
 Power BI – Business insights and dashboards
 
 ## 📊 Dataset Overview:
-File Name	Description
-Athletes.csv: Athlete name, discipline, country, birth details
-Coaches.csv: Coach name, discipline, and nationality
-EntriesGender.csv	Gender-wise event entries per discipline, team
-Medals.csv	Medal winners by discipline, event, team, athlete
-Teams.csv	Team metadata (team name, country, etc.)
+| Table Name    | Description                          |
+| ------------- | ------------------------------------ |
+| `dim_athlete` | Name, birthdate, discipline, country |
+| `dim_team`    | Team name, NOC (country), region     |
+| `dim_coach`   | Coach name, discipline, nationality  |
+| `dim_event`   | Event name, discipline, gender       |
+
 
 ## 🔁 Workflow Stages:
 Ingestion (ADF):
@@ -77,22 +78,26 @@ Use Power BI to answer:
 
 🌍 Region-based performance comparison?
 
-🧱 Olympics Analytics Data Model
+## 🧱 Olympics Analytics Data Model
    ![Data Model](DML_Diagram.png)
 
 ## 🗃️ Dimension Tables:
-Table Name	Description
-dim_athlete	Name, birthdate, discipline, country
-dim_team	Team name, NOC (country), region
-dim_coach	Coach name, discipline, nationality
-dim_event	Event name, discipline, gender
+| Table Name    | Description                          |
+| ------------- | ------------------------------------ |
+| `dim_athlete` | Name, birthdate, discipline, country |
+| `dim_team`    | Team name, NOC (country), region     |
+| `dim_coach`   | Coach name, discipline, nationality  |
+| `dim_event`   | Event name, discipline, gender       |
+
 
 ## 📈 Fact Table:
-Table Name	Description
-fact_medal	Foreign keys to athletes, team, event; medal type
-fact_entries	Gender-based event entry counts
+| Table Name     | Description                                       |
+| -------------- | ------------------------------------------------- |
+| `fact_medal`   | Foreign keys to athletes, team, event; medal type |
+| `fact_entries` | Gender-based event entry counts                   |
 
 ## 📌 Folder Structure (GitHub)
+
 📁 olympics-data-azure-pipeline
 ├── 📂 data
 │   ├── Athletes.csv
