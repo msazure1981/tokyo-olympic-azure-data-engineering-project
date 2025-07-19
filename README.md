@@ -4,9 +4,7 @@
 This project demonstrates a modern data engineering and analytics pipeline using Microsoft Azure. It includes data ingestion, transformation, warehousing, and visualization using Azure-native tools. The dataset is based on Olympic historical data (Athletes, Coaches, Medals, etc.).
 
 🔄 Project Workflow Diagram:
-(Use the attached architecture image in your GitHub README.md and describe each stage briefly)
 ![Project Workflow Diagram:](Architecture.jpg)
-
 🔧 Tools & Technologies Used:
 Azure Data Factory (ADF) – Data ingestion
 
